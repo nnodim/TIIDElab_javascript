@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Biography</title> 
-    <link rel="stylesheet" href="style.css">       
+    <title>My Biography</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,16 +17,19 @@
     </header>
     <div class="container">
         <h2>About Me</h2>
-        <p>Hi, my name is Nnodim Obinna Brian and I am currently learning HTML and CSS.</p>
+        <p>Hi, my name is Nnodim Obinna Brian</p>
+        <p>In my free time, I enjoy reading books, learning new languages, and exploring the latest trends in technology. I also
+        have a passion for music and enjoy listening to a wide variety of genres.</p>
+        <p id="text">I am currently learning HTML and CSS.</p>
         <button id="update-button">Update Me</button>
     </div>
 
     <script>
         const updateButton = document.getElementById("update-button");
-        const learningStatus = document.querySelector("p");
+        const learningStatus = document.getElementById("text");
 
         updateButton.addEventListener("click", () => {
-            learningStatus.textContent = "Hi, my name is [Your Name] and I am currently learning JavaScript.";
+            learningStatus.textContent = "I am currently learning JavaScript.";
         });
     </script>
 </body>
